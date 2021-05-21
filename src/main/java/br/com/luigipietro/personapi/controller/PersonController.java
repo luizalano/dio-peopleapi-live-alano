@@ -10,6 +10,6 @@ public class PersonController {
 
     @GetMapping
     public String getBook(){
-        return "API Test!";
+        return "API Test!\nEstou n Heroku, mas o banco está no Elephant";
     }
 }
