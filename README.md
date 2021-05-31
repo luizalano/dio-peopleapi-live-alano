@@ -14,10 +14,19 @@ Além das funcionalidades explicadas no cursos, foram adicionados os métodos de
 
 Para isso a interface PerosRepository ganhou dois novos métodos abstratos:
 
-public interface PersonRepository extends JpaRepository<Person, Long> {
-    List<Person> findByFirstName (String firstName);
-    List<Person> findByFirstNameIgnoreCaseContaining (String firstName);
-}
+    
+   
+    public interface PersonRepository extends JpaRepository<Person, Long> {
+        List<Person> findByFirstName (String firstName);
+        List<Person> findByFirstNameIgnoreCaseContaining (String firstName);
+    }
+
+
+
+
+
+    
+    
 
 Os métodos foram implementados na classe PersonService e chamados no PersonController
 
